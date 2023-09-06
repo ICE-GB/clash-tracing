@@ -19,7 +19,7 @@ services:
       - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
       - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
     ports:
-      - "3000:3000"
+      - "9091:3000"
   vector:
     image: timberio/vector:0.X-alpine
     container_name: vector
